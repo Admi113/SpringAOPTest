@@ -22,10 +22,10 @@ public class UniLibrary extends AbstractLibrary {
 
     }
 
-    public void returnBook() {
+    public String returnBook() {
+        int err = 10 / 0;
         System.out.println("Возвращаем книгу в UniLabrary");
-        System.out.println("_____________________________________");
-
+        return "SomeBookName";
     }
 
     public void addMagzine() {
@@ -34,7 +34,7 @@ public class UniLibrary extends AbstractLibrary {
 
     }
 
-    public void addBook(String presonName,Book book) {
+    public void addBook(String presonName, Book book) {
         System.out.println("Добавляем книгу в UniLabrary");
         System.out.println("_____________________________________");
 
