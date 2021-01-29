@@ -6,7 +6,10 @@ public class Test1 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         UniLibrary library = context.getBean("uniLibraryBean", UniLibrary.class);
+       Book book = context.getBean("book",Book.class);
         library.getBook();
         library.addMagzine();
+        library.addBook("Dima",book);
+
     }
 }
